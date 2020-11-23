@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #69798a;
+  color: #a5a7a8;
 }
 
 #hero p {
@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #a2c9ec;
   letter-spacing: 1px;
 }
 
@@ -460,14 +460,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #606e7c;
+  background: #2a3036;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #0e2438;
+  background-color: #43596e;
 }
 
 /*--------------------------------------------------------------
@@ -478,13 +478,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #adb8c3;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #29333b;
   position: relative;
 }
 
@@ -500,7 +500,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #272727;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -527,8 +527,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
+  background: rgb(163, 163, 163);
+  border: 2px solid #899fb4;
 }
 
 /*--------------------------------------------------------------
@@ -925,7 +925,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #6c7c8d;
 }
 
 .contact .info p {
