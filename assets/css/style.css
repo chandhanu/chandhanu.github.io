@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0563bb;
-  color: rgb(129, 111, 111);
+  background: #151618;
+  color: rgb(184, 182, 182);
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
