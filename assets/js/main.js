@@ -1,9 +1,4 @@
-/**
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -189,3 +184,47 @@
   });
 
 })(jQuery);
+
+
+
+// The svg
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+// Map and projection
+var projection = d3.geoMercator()
+    .scale(85)
+    .translate([width/2, height/2*1.3])
+
+// Create data: coordinates of start and end
+var link = {type: "LineString", coordinates: [[280, 50], [78, 30]]} // Change these data to see ho the great circle reacts
+
+// A path generator
+var path = d3.geoPath()
+    .projection(projection)
+
+// Load world shape
+d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(data){
+
+    // Draw the map
+    svg.append("g")
+        .selectAll("path")
+        .data(data.features)
+        .enter().append("path")
+            .attr("fill", "#b8b8b")
+            .attr("d", d3.geoPath()
+                .projection(projection)
+            )
+            .style("stroke", "#fff")
+            .style("stroke-width", 0)
+
+    // Add the path
+    svg.append("path")
+      .attr("d", path(link))
+      .style("fill", "none")
+      .style("stroke", "orange")
+      .style("stroke-width", 7)
+
+})
+
